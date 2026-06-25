@@ -41,7 +41,7 @@
         }
 </style>
 <body>
-        <header class="divide-y divide-gray-500 content bg-off-white-500 w-full">
+        <header class="w-full divide-y divide-gray-500 content bg-off-white-500">
                 <div class="w-full bg-blue">
                         <div id="header-t" class="flex justify-between items-center max-w-7xl mx-auto h-22.5 border-box text-black">
                                 <div id="logo" class=""><a href="#" class="flex items-center gap-2.5"><img src="assets/svg/logo.svg" alt="Nitro"><h1 class="text-[40px] text-black font-normal font-hammersmith">NITRO</h1></a></div>
@@ -49,30 +49,39 @@
                                         <div id="user" class=""><a href="#"><span>Minha conta</span></a></div>
                                         <div id="cart" class="flex items-center gap-2.5">
                                                 <a href="#" class="flex justify-end h-12"><img src="assets/svg/cart.svg" alt="Your Cart" class="w-9 aspect-square">
-                                                        <div id="" class="flex justify-center items-center bg-primary-500 w-5 aspect-square absolute content text-sm text-white rounded leading-none "><span>1</span></div>
+                                                        <div id="" class="absolute flex items-center justify-center w-5 text-sm leading-none text-white rounded bg-primary-500 aspect-square content "><span>1</span></div>
                                                 </a>
                                                 <div class="flex flex-col justify-between h-8 content">
-                                                        <span class="text-sm text-gray-600 leading-none">Total:</span>
+                                                        <span class="text-sm leading-none text-gray-600">Total:</span>
                                                         <p class="text-sm leading-none">R$ 100,00</p>
                                                 </div>
                                         </div>
                                 </div>
                         </div>
                 </div>
-                <div id="header-b" class="max-w-7xl mx-auto flex justify-between items-center h-15 bg-off-white-500">
+                <div id="header-b" class="flex items-center justify-between mx-auto max-w-7xl h-15 bg-off-white-500">
                         <div id="nav-bar" class="flex gap-4">
                                 <a href="" class="flex items-center "><span class="h-full">Hardware</span><img class="w-7" src="assets/svg/dropdown.svg" alt="Hardware"></a>
                                 <a href="" class="flex items-center "><span class="h-full">Periféricos</span><img class="w-7" src="assets/svg/dropdown.svg" alt="Periféricos"></a>
                         </div>
 
-                        <a href="#" class="inline-flex items-center justify-center bg-primary-500 px-3 py-2 rounded-2xl font-semibold text-off-white-500 leading-none">
+                        <a href="#" class="inline-flex items-center justify-center px-3 py-2 font-semibold leading-none bg-primary-500 rounded-2xl text-off-white-500">
                                 Anunciar
                         </a>
                 </div>
         </header>
-        <div class="w-full h-150 bg-gray-100"></div>
+
+        <div id="content" class="w-full h-200"></div>
+
+        <div id="login-full-bg" class="fixed inset-0 z-50 w-full h-full bg-transparent popup-content">
+                <div class="object-contain w-fit h-50 bg-off-white-500">
+                        <div id="" class="p-2.5 bg-primary-500"><img class="" src="assets/images/login-img.png" alt=""></div>
+                        <div id="" class=""></div>
+                </div>
+        </div>
+
         <footer class="bg-off-white-500 px-75 py-12.5 divide-y divide-gray-500">
-                <div id="top" class="flex pb-40 gap-20">
+                <div id="top" class="flex gap-20 pb-40">
                         <div id="info" class="flex flex-col gap-5">
                                 <div id="logo" class="w-fit"><a href="#" class="flex items-center gap-2.5"><img src="assets/svg/logo.svg" alt="Nitro"><h1 class="text-[40px] text-black font-normal font-hammersmith">NITRO</h1></a></div>
                                 <p class="w-150 opacity-60">
