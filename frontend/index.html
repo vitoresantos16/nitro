@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CDN Dev.</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<style type="text/tailwindcss">
+
+        @font-face {
+                font-family: "Hammersmith One";
+                src: url("./assets/fonts/HammersmithOne-Regular.woff2") format("woff2");
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+        }
+
+        @theme {
+                --color-primary-100: #fcdbcc;
+                --color-primary-200: #fab799;
+                --color-primary-300: #f79466;
+                --color-primary-400: #f57033;
+                --color-primary-500: #f24c00; 
+                --color-primary-600: #c23d00;
+                --color-primary-700: #912e00;
+                --color-primary-800: #611e00;
+                --color-primary-900: #300f00;
+
+                --color-off-white-100: #fefefd;
+                --color-off-white-200: #fdfdfb;
+                --color-off-white-300: #fcfbfa;
+                --color-off-white-400: #fbfaf8;
+                --color-off-white-500: #faf9f6;
+                --color-off-white-600: #c8c7c5;
+                --color-off-white-700: #969594;
+                --color-off-white-800: #646462;
+                --color-off-white-900: #323231;
+
+                --font-hammersmith: "Hammersmith One", sans-serif;
+        }
+</style>
+<body>
+        <header class="divide-y divide-gray-500 content bg-off-white-500 w-full">
+                <div class="w-full bg-blue">
+                        <div id="header-t" class="flex justify-between items-center max-w-7xl mx-auto h-22.5 border-box text-black">
+                                <div id="logo" class=""><a href="#" class="flex items-center gap-2.5"><img src="assets/svg/logo.svg" alt="Nitro"><h1 class="text-[40px] text-black font-normal font-hammersmith">NITRO</h1></a></div>
+                                <div id="right" class="flex items-center gap-10 font-semibold">
+                                        <div id="user" class=""><a href="#"><span>Minha conta</span></a></div>
+                                        <div id="cart" class="flex items-center gap-2.5">
+                                                <a href="#" class="flex justify-end h-12"><img src="assets/svg/cart.svg" alt="Your Cart" class="w-9 aspect-square">
+                                                        <div id="" class="flex justify-center items-center bg-primary-500 w-5 aspect-square absolute content text-sm text-white rounded leading-none "><span>1</span></div>
+                                                </a>
+                                                <div class="flex flex-col justify-between h-8 content">
+                                                        <span class="text-sm text-gray-600 leading-none">Total:</span>
+                                                        <p class="text-sm leading-none">R$ 100,00</p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div id="header-b" class="max-w-7xl mx-auto flex justify-between items-center h-15 bg-off-white-500">
+                        <div id="nav-bar" class="flex gap-4">
+                                <a href="" class="flex items-center "><span class="h-full">Hardware</span><img class="w-7" src="assets/svg/dropdown.svg" alt="Hardware"></a>
+                                <a href="" class="flex items-center "><span class="h-full">Periféricos</span><img class="w-7" src="assets/svg/dropdown.svg" alt="Periféricos"></a>
+                        </div>
+
+                        <a href="#" class="inline-flex items-center justify-center bg-primary-500 px-3 py-2 rounded-2xl font-semibold text-off-white-500 leading-none">
+                                Anunciar
+                        </a>
+                </div>
+        </header>
+        <div class="w-full h-150 bg-gray-100"></div>
+        <footer class="bg-off-white-500 px-75 py-12.5 divide-y divide-gray-500">
+                <div id="top" class="flex pb-40 gap-20">
+                        <div id="info" class="flex flex-col gap-5">
+                                <div id="logo" class="w-fit"><a href="#" class="flex items-center gap-2.5"><img src="assets/svg/logo.svg" alt="Nitro"><h1 class="text-[40px] text-black font-normal font-hammersmith">NITRO</h1></a></div>
+                                <p class="w-150 opacity-60">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi luctus consectetur hendrerit. 
+                                        Mauris id varius erat. Phasellus pharetra urna quis varius facilisis. Curabitur tincidunt 
+                                        metus nec diam lacinia posuere.
+                                </p>
+                        </div>
+                        <div id="pages" class="flex flex-col gap-4">
+                                <h3 class="text-xl font-semibold text-primary-400">Páginas</h1>
+                                <nav>
+                                        <ul class="flex flex-col gap-1 opacity-80">
+                                                <li><a href="#">Home</a></li>
+                                                <li><a href="#">Minha Conta</a></li>
+                                                <li><a href="#">Hardware</a></li>
+                                                <li><a href="#">Periféricos</a></li>
+                                                <li><a href="#">Carrinho</a></li>
+                                                <li><a href="#">Anunciar</a></li>
+                                        </ul>
+                                </nav>
+                        </div>
+                        <div id="help" class="flex flex-col gap-4">
+                                <h3 class="text-xl font-semibold text-primary-400">Ajuda</h3>
+                                <nav>
+                                        <ul class="flex flex-col gap-1 opacity-80">
+                                                <li><a href="#">Como comprar?</a></li>
+                                                <li><a href="#">Como anunciar?</a></li>
+                                                <li><a href="#">Contatar suporte</a></li>
+                                        </ul>
+                                </nav>
+                        </div>
+                </div>
+                <div id="btm" class="flex justify-between pt-5">
+                        <div id="rights" class="text-gray-500">
+                                <p>©2026 Nitro. Todos direitos reservados.</p>
+                        </div>
+                        <div id="politics">
+                                <nav>
+                                        <ul class="flex gap-6">
+                                                <li><a href="">Termos de Serviço</a></li>
+                                                <li><a href="">Política de Privacidade</a></li>
+                                                <li><a href="">Política de Cookies</a></li>
+                                        </ul>
+                                </nav>
+                        </div>
+                </div>
+        </footer>
+</body>
+</html>
