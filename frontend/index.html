@@ -73,18 +73,45 @@
 
         <div id="content" class="w-full h-200"></div>
 
-        <div id="login-full-bg" class="fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-blue backdrop-blur-xs popup-content">
-                <div class="flex object-contain z-100 w-fit h-fit bg-off-white-500">
+        <div id="login-full-bg" class="hidden fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-blue backdrop-blur-xs popup-content">
+                <div class="flex object-contain w-fit h-fit bg-off-white-500">
                         <div id="" class="p-2.5 bg-primary-400"><img class="" src="assets/images/login-img.png" alt=""></div>
-                        <div id="" class="flex flex-col items-center gap-5 py-20 px-25">
+                        <div id="" class="md:w-xl relative flex flex-col items-center gap-5 py-20 px-25">
+                                <button onclick="" class="w-fit h-fit top-3 right-3 cursor-pointer z-100 absolute bg-primary-400 flex justify-center items-center rounded"><img src="assets/svg/close-icon.svg" alt="Fechar" class="w-full"></button>
                                 <h3 class="text-4xl font-hammersmith">Entrar</h3>
                                 <p class="">Ainda não possui uma conta? <a href="#" class="font-semibold text-primary-400">Crie agora</a></p>
                                 <input type="text" class="w-full px-5 py-3 placeholder-opacity-75 rounded placeholder-gray bg-primary-100" placeholder="Email">
                                 <input type="text" class="w-full px-5 py-3 placeholder-opacity-75 rounded placeholder-gray bg-primary-100" placeholder="Senha">
-                                <div class="flex justify-end w-full">
+                                <div class="flex justify-between w-full">
+                                        <div class="flex gap-1">
+                                                <input type="checkbox" name="" id="rememberPassword" class="w-4 accent-primary-300 text-off-white-500">
+                                                <label for="rememberPassword" class="">Lembrar</label>
+                                        </div>
                                         <a href="#" class="font-semibold text-primary-400">Esqueci minha senha</a>
                                 </div>
                                 <button class="w-full px-5 py-3 text-xl font-semibold rounded cursor-pointer bg-primary-400 text-off-white-500">Entrar</button>
+                        </div>
+                </div>
+        </div>
+
+        <div id="signin-full-bg" class="hidden fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-blue backdrop-blur-xs popup-content">
+                <div class="flex object-contain w-fit h-fit bg-off-white-500">
+                        <div id="" class="p-2.5 bg-primary-400"><img class="" src="assets/images/signin-img.png" alt=""></div>
+                        <div id="" class="md:w-xl sm:w-50 relative flex flex-col items-center gap-5 py-20 px-25">
+                                <button onclick="" class="w-fit h-fit top-3 right-3 cursor-pointer z-100 absolute bg-primary-400 flex justify-center items-center rounded"><img src="assets/svg/close-icon.svg" alt="Fechar" class="w-full"></button>
+                                <h3 class="text-4xl font-hammersmith">Cadastro</h3>
+                                <p class="">Já possui uma conta? <a href="#" class="font-semibold text-primary-400">Entre agora</a></p>
+                                <input type="text" class="w-full px-5 py-3 placeholder-opacity-75 rounded placeholder-gray bg-primary-100" placeholder="Nome de usuário">
+                                <input type="text" class="w-full px-5 py-3 placeholder-opacity-75 rounded placeholder-gray bg-primary-100" placeholder="E-mail">
+                                <input type="text" class="w-full px-5 py-3 placeholder-opacity-75 rounded placeholder-gray bg-primary-100" placeholder="Senha">
+                                <input type="text" class="w-full px-5 py-3 placeholder-opacity-75 rounded placeholder-gray bg-primary-100" placeholder="Confirmar senha">
+                                <div class="flex justify-start w-full">
+                                        <div class="flex gap-1">
+                                                <input type="checkbox" name="" id="rememberPassword" class="w-4 accent-primary-300 text-off-white-500">
+                                                <label for="rememberPassword" class="">Lembrar</label>
+                                        </div>
+                                </div>
+                                <button class="w-full px-5 py-3 text-xl font-semibold rounded cursor-pointer bg-primary-400 text-off-white-500">Criar conta</button>
                         </div>
                 </div>
         </div>
