@@ -73,11 +73,11 @@
 
         <div id="content" class="w-full h-200"></div>
 
-        <div id="login-full-bg" class="hidden fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-blue backdrop-blur-xs popup-content">
+        <div id="login-tab" class="fixed inset-0 z-50 flex items-center justify-center hidden w-full h-full bg-blue backdrop-blur-xs popup-content">
                 <div class="flex object-contain w-fit h-fit bg-off-white-500">
                         <div id="" class="p-2.5 bg-primary-400"><img class="" src="assets/images/login-img.png" alt=""></div>
-                        <div id="" class="md:w-xl relative flex flex-col items-center gap-5 py-20 px-25">
-                                <button onclick="" class="w-fit h-fit top-3 right-3 cursor-pointer z-100 absolute bg-primary-400 flex justify-center items-center rounded"><img src="assets/svg/close-icon.svg" alt="Fechar" class="w-full"></button>
+                        <div id="" class="relative flex flex-col items-center gap-5 py-20 md:w-xl px-25">
+                                <button onclick="" class="absolute flex items-center justify-center rounded cursor-pointer w-fit h-fit top-3 right-3 z-100 bg-primary-400"><img src="assets/svg/close-icon.svg" alt="Fechar" class="w-full"></button>
                                 <h3 class="text-4xl font-hammersmith">Entrar</h3>
                                 <p class="">Ainda não possui uma conta? <a href="#" class="font-semibold text-primary-400">Crie agora</a></p>
                                 <input type="text" class="w-full px-5 py-3 placeholder-opacity-75 rounded placeholder-gray bg-primary-100" placeholder="Email">
@@ -94,11 +94,11 @@
                 </div>
         </div>
 
-        <div id="signin-full-bg" class="hidden fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-blue backdrop-blur-xs popup-content">
+        <div id="signin-tab" class="fixed inset-0 z-50 flex items-center justify-center hidden w-full h-full bg-blue backdrop-blur-xs popup-content">
                 <div class="flex object-contain w-fit h-fit bg-off-white-500">
                         <div id="" class="p-2.5 bg-primary-400"><img class="" src="assets/images/signin-img.png" alt=""></div>
-                        <div id="" class="md:w-xl sm:w-50 relative flex flex-col items-center gap-5 py-20 px-25">
-                                <button onclick="" class="w-fit h-fit top-3 right-3 cursor-pointer z-100 absolute bg-primary-400 flex justify-center items-center rounded"><img src="assets/svg/close-icon.svg" alt="Fechar" class="w-full"></button>
+                        <div id="" class="relative flex flex-col items-center gap-5 py-20 md:w-xl sm:w-50 px-25">
+                                <button onclick="" class="absolute flex items-center justify-center rounded cursor-pointer w-fit h-fit top-3 right-3 z-100 bg-primary-400"><img src="assets/svg/close-icon.svg" alt="Fechar" class="w-full"></button>
                                 <h3 class="text-4xl font-hammersmith">Cadastro</h3>
                                 <p class="">Já possui uma conta? <a href="#" class="font-semibold text-primary-400">Entre agora</a></p>
                                 <input type="text" class="w-full px-5 py-3 placeholder-opacity-75 rounded placeholder-gray bg-primary-100" placeholder="Nome de usuário">
@@ -112,6 +112,52 @@
                                         </div>
                                 </div>
                                 <button class="w-full px-5 py-3 text-xl font-semibold rounded cursor-pointer bg-primary-400 text-off-white-500">Criar conta</button>
+                        </div>
+                </div>
+        </div>
+
+        <div id="shopping-cart-tab" class=" hidden fixed inset-0 z-50 flex items-center justify-center w-full h-full bg-blue backdrop-blur-xs popup-content">
+                <div class="relative flex p-20 bg-off-white-500">
+                        <button class="absolute cursor-pointer top-3 right-3"><img src="assets/svg/close-icon.svg" alt=""></button>
+                        <div class="p-20 w-fit">
+                                <h3 class="text-xl text-gray-700">Meu carrinho</h3>
+                                <div id="cart-list" class="overflow-y-auto">
+                                        <div id="item-card" class="flex [&>.child]:px-4 [&>.child]:py-4 border rounded border-gray-500 p-5">
+                                                <img class="object-cover rounded w-30 aspect-square" src="assets/images/shopping-cart-example.jpg" alt="Foto do produto">
+                                                <div class="flex flex-col justify-between child">
+                                                        <h3 class="text-xl">Placa de Vídeo RTX 3090</h3>
+                                                        <div class="px-1.5 gap-1 flex border border-gray-500 rounded-xl w-fit text-lg [&>.child]:w-5 [&>.child]:flex [&>.child]:justify-center [&>.child]:items-center">
+                                                                <button class="cursor-pointer child">–</button>
+                                                                <p class="flex justify-center w-4 child">1</p>
+                                                                <button class="cursor-pointer child">+</button>
+                                                        </div>
+                                                </div>
+                                                <div class="flex flex-col items-end justify-between child">
+                                                        <p>R$ 000,00</p>
+                                                        <button class="w-6 cursor-pointer"><img class="w-full" src="assets/svg/trash-can-icon.svg" alt="Remover"></button>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="w-80 flex flex-col border border-gray-500 divide-y divide-gray-500 gap [&>div]:px-8 [&>div]:py-5">
+                                <div class=""><h3 class="text-2xl">Resumo</h3></div>
+                                <div class="">
+                                        <div class="flex justify-between">
+                                                <p class="text-gray-700">Subtotal</p>
+                                                <span>R$ 000,00</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                                <p class="text-gray-700">Frete</p>
+                                                <span class="font-semibold text-primary-400">R$ 00,00</span>
+                                        </div>
+                                </div>
+                                <div class="flex justify-between text-lg font-semibold">
+                                        <p>Total</p>
+                                        <span class="">R$ 000,00</span>
+                                </div>
+                                <div class="">
+                                        <button class="w-full px-5 py-3 text-xl font-semibold cursor-pointer rounded-xl bg-primary-400 text-off-white-500 ">Finalizar compra</button>
+                                </div>
                         </div>
                 </div>
         </div>
